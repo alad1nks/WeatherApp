@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wind">Wind</string>
+    <string name="humidity">Humidity</string>
+    <string name="perception">Perception</string>
+</resources>
