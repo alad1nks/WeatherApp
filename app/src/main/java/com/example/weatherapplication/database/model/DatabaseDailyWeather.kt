@@ -6,10 +6,10 @@ import com.example.weatherapplication.domain.DailyWeather
 
 @Entity(tableName = "databasedailyweather")
 data class DatabaseDailyWeather(
-    @PrimaryKey
     val icon: Int,
     val temperature: String,
     val weather: String,
+    @PrimaryKey
     val date: String
 )
 
