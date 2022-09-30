@@ -28,6 +28,7 @@ class DailyWeatherRepository @Inject constructor(
             "metric",
             "25bce8a1d881a71732d233bd579371f0"
         )
+        db.clear()
         db.insertDailyWeather(daily.asDatabase())
         return daily.asDomain()
     }
