@@ -40,7 +40,7 @@ class DailyWeatherAdapter : ListAdapter<DailyWeather, DailyWeatherAdapter.DailyW
     override fun onBindViewHolder(holder: DailyWeatherViewHolder, position: Int) {
         val item = getItem(position)
         with(holder) {
-            findTextDailyTemp.text = item.temperature.toString() + "°"
+            findTextDailyTemp.text = item.temperature + "°"
             findTextDailyWeather.text = item.weather
             findTextDay.text = item.date
             findDailyWeather.setImageResource(item.icon)
