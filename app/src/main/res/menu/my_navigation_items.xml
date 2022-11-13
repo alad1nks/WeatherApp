@@ -4,10 +4,10 @@
         android:id="@+id/current_weather"
         android:enabled="true"
         android:icon="@drawable/home_page"
-        android:title=""/>
+        android:title="@string/title_current"/>
     <item
         android:id="@+id/daily_weather"
         android:enabled="true"
         android:icon="@drawable/calendar"
-        android:title=""/>
+        android:title="@string/title_daily"/>
 </menu>

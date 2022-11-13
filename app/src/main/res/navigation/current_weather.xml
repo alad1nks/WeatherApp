@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/currentWeatherFragment"
         android:name="com.example.weatherapplication.ui.current.CurrentWeatherFragment"
-        android:label="Weather"
+        android:label="Current Weather"
         tools:layout="@layout/fragment_current_weather">
     </fragment>
 

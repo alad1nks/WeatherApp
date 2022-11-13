@@ -62,7 +62,7 @@ data class GetCurrentWeatherResponse(
 
 fun GetCurrentWeatherResponse.asDomain(): CurrentWeather {
     return CurrentWeather(
-        city = "Almaty",
+        city = name!!,
         icon = when(weather!![0]!!.icon!!) {
             "01d" -> R.drawable.sunny
             "02d" -> R.drawable.pcloudy
@@ -91,7 +91,7 @@ fun GetCurrentWeatherResponse.asDomain(): CurrentWeather {
 
 fun GetCurrentWeatherResponse.asDatabase(): DatabaseCurrentWeather {
     return DatabaseCurrentWeather(
-        city = "Almaty",
+        city = name!!,
         icon = when(weather!![0]!!.icon!!) {
             "01d" -> R.drawable.sunny
             "02d" -> R.drawable.pcloudy

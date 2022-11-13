@@ -3,7 +3,6 @@ package com.example.weatherapplication.ui.current.viewmodel
 import androidx.lifecycle.*
 import com.example.weatherapplication.domain.CurrentWeather
 import com.example.weatherapplication.repositories.UserCurrentWeatherRepository
-import dagger.Binds
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.IOException

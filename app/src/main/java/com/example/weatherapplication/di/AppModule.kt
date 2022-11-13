@@ -1,6 +1,7 @@
 package com.example.weatherapplication.di
 
 import android.content.Context
+import android.content.SharedPreferences
 import androidx.room.Room
 import com.example.weatherapplication.database.CurrentWeatherDatabase
 import com.example.weatherapplication.database.DailyWeatherDatabase
@@ -56,5 +57,11 @@ object AppModule {
             }
         }
         return INSTANCEDAILY
+    }
+
+    @Provides
+    @Singleton
+    fun provideSharedPreference(context: Context): SharedPreferences {
+        return context.getSharedPreferences("dagger-pref", Context.MODE_PRIVATE)
     }
 }

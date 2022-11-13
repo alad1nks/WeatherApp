@@ -8,13 +8,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
-import com.example.weatherapplication.R
 import com.example.weatherapplication.WeatherApp
 import com.example.weatherapplication.databinding.FragmentCurrentWeatherBinding
 import com.example.weatherapplication.ui.current.viewmodel.CurrentWeatherViewModel
 import javax.inject.Inject
 
-class CurrentWeatherFragment : Fragment(R.layout.fragment_current_weather) {
+class CurrentWeatherFragment : Fragment() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory

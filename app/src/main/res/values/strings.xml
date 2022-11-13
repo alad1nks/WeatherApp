@@ -3,4 +3,8 @@
     <string name="wind">Wind</string>
     <string name="humidity">Humidity</string>
     <string name="perception">Perception</string>
+    <string name="title_current">Current</string>
+    <string name="title_daily">Daily</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_exit">Exit</string>
 </resources>

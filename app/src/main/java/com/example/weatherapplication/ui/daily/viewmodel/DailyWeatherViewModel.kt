@@ -3,7 +3,6 @@ package com.example.weatherapplication.ui.daily.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.weatherapplication.domain.CurrentWeather
 import com.example.weatherapplication.domain.DailyWeather
 import com.example.weatherapplication.repositories.UserDailyWeatherRepository
 import kotlinx.coroutines.Dispatchers

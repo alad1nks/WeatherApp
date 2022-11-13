@@ -38,13 +38,13 @@ class DailyWeatherFragment : Fragment(R.layout.fragment_daily_weather) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         _binding = FragmentDailyWeatherBinding.inflate(inflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val adapter = DailyWeatherAdapter()
         binding.recyclerDailyWeather.adapter = adapter
         binding.recyclerDailyWeather.layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
